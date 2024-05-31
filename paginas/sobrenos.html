@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/auth.js" defer></script>
     <title>Sobre Nós</title>
   </head>
   <body>
@@ -14,8 +15,11 @@
             <div class="logo"><h1>LOGO</h1></div>
             <ul class="links-header">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="./paginas/sobrenos.html">Sobre</a></li>
-              <li><a href="#">Login</a></li>
+              <li><a href="./sobrenos.html">Sobre</a></li>
+              <div> 
+                <li><a class="link" href="./login.html">Login</a></li>
+                <li id="user-info" style="display: none;" class="nome-exibicao"><span id="user-name"></span></li>
+              </div>        
             </ul>
           </header>
           <main>

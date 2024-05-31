@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OceanWays</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inicio">
+        <div class="overlay">
+          <header>
+            <div class="logo"><h1>LOGO</h1></div>
+            <ul class="links-header">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./sobrenos.html">Sobre</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </header>
+          <div class="box-card-inicio">
+            <main>
+                <div id="div-login">
+                  <div>
+                    <p class="valida"></p>
+                  </div>
+                  <div class="quadrado">
+                    <form
+                      action="#"
+                      method="get"
+                      onsubmit="return validaCampos(this.idEmail,this.idSenha)"
+                    >
+                      <h1>Acessar Conta</h1>
+                      <p>Preencha seus dados de acesso para continuar.</p>
+                      <div>
+                        <h2>Conta:</h2>
+                        <input
+                          id="idEmail"
+                          class="formatacao-entrada"
+                          type="email"
+                          name="senha"
+                          placeholder=" CPF / CNPJ"
+                        />
+                      </div>
+                      <div>
+                        <h3 for="idSenha">Senha:</h3>
+                        <input
+                          id="idSenha"
+                          class="formatacao-entrada"
+                          type="password"
+                          name="senha"
+                          id="idSenha"
+                          placeholder=" SENHA"
+                        />
+                        <i class="fa-regular fa-eye-slash"></i>
+                      </div>
+                      <div>
+                        <button type="submit" >Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

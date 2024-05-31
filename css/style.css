@@ -138,5 +138,65 @@ body{
     
     }
 
+    /* Página Login */
+    #div-login {
+        display: flex;
+        justify-content: center;
+    
+        .quadrado {
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          height: 600px;
+          background-color: #c9e2ee;
+          border: solid black 3px;
+          border-radius: 20px;
+          margin: 30px;
+        }
+        h1 {
+          text-align: center;
+          margin-top: 100px;
+        }
+        p {
+          text-align: center;
+          margin-top: 20px;
+          font-weight: bold;
+        }
+        h2 {
+          text-align: center;
+          font-weight: bold;
+          margin-top: 30px;
+          font-size: 2rem;
+        }
+        .formatacao-entrada {
+          margin-left: 50px;
+          height: 60px;
+          width: 400px;
+          border-radius: 50px;
+          font-size: 3rem;
+        }
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          margin-top: 30px;
+          font-size: 2rem;
+        }
+        button{
+          display: block;
+          padding: 5px 25px;
+          border-radius: 5px;
+          border:solid 1px ;
+          background-color: #000000;
+          color: #fff;
+          font-size: 1.75rem;
+          margin-left: 200px;
+          margin-top: 30px;
+          
+        }
+        .fa-regular {
+          cursor: pointer;
+          user-select: none;
+        }
+      }
 
 }
