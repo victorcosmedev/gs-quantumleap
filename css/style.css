@@ -24,7 +24,7 @@ body{
     .container .inicio{
         background-image: url("../img/bg-inicio.jpg");
         background-size: cover;
-        height: 500px;
+        height: 1000px;
         border: 2px solid blue;
     }
 
@@ -58,7 +58,7 @@ body{
 
     .links-header li a {
         text-decoration: none;
-        color: white;
+        color: rgb(255, 255, 255);
         font-weight: bold;
         font-size: 2rem;
     }
@@ -90,4 +90,53 @@ body{
         font-size: 1.75rem;
         line-height: 30pt;
     }
+
+
+    /* Página Sobre Nós */
+    #conteudo{
+        padding: 50px 150px 75px 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    
+        h1{
+            font-size: 5rem;
+            color: white;
+        }
+    
+        div{
+            margin-top: 20px;
+            display:flex;
+            align-items: center;
+        }
+    
+        div .foto-integrante{
+            height: 150px;
+            width: 150px;
+            background-color: #c5c5c5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    
+        div .descricao-integrante{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 7.5px;
+            align-items: flex-start;
+            margin-left: 50px;
+    
+            h4{
+                color:#8f8f8f
+            }
+        }
+        .link-repo{
+            color: white;
+        }
+    
+    }
+
+
 }
