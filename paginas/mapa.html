@@ -1,65 +1,46 @@
-<html>
-  <head>
-    <title>Mapa</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <script type="module" src="../js/api.js"></script>
-  </head>
-  <body>
-    <div class="inicio-index">
-      <div class="overlay">
-        <header>
-          <div class="logo">Logo</div>
-          <nav>
-            <ul class="links-header">
-              <li><a href="#">Integrantes</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Cadastro</a></li>
-            </ul>
-            <ul class="hamburguer">
-              <li>
-                <a href="./paginas/menu.html"
-                  ><img src="./img/icone-hamburguer.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
-        <div class="conteudo-inicio">
-          <div class="card-conteudo-inicio">
-            <!-- <div class="seleciona-card">
-              <img src="./img/seta.png" alt="" />
-              <img src="./img/seta.png" alt="" />
-            </div> -->
-            <div class="texto-card">
-              <h1>Título</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nostrum dignissimos corrupti quaerat suscipit voluptates
-                quibusdam reprehenderit ut ad temporibus facilis perspiciatis,
-                ex exercitationem voluptatem dolorum, cupiditate nobis, illo
-                delectus adipisci! Accusamus in quod corporis suscipit dolores
-                explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam
-                provident accusantium, debitis sequi id iure cum praesentium
-                beatae ex, numquam assumenda perferendis consectetur? Beatae.
-              </p>
-            </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <script type="module" src="../js/api.js"></script>
+</head>
+<body>
+  <div class="inicio-index">
+    <div class="overlay">
+      <header>
+        <div class="logo">Logo</div>
+        <nav>
+          <ul class="links-header">
+            <li><a href="#">Integrantes</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Cadastro</a></li>
+          </ul>
+          <ul class="hamburguer">
+            <li>
+              <a href="./paginas/menu.html"><img src="../img/icone-hamburguer.png" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="conteudo-inicio">
+        <div class="card-conteudo-inicio">
+          <div class="texto-card">
+            <h1>Título</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dignissimos corrupti quaerat suscipit voluptates quibusdam reprehenderit ut ad temporibus facilis perspiciatis, ex exercitationem voluptatem dolorum, cupiditate nobis, illo delectus adipisci! Accusamus in quod corporis suscipit dolores explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam provident accusantium, debitis sequi id iure cum praesentium beatae ex, numquam assumenda perferendis consectetur? Beatae.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div id="map" >
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VkaPw_je3b_1T8F4ONEIYHGuX7a5Po&callback=initMap&v=weekly"
-        defer
-      ></script>
-    </div>
-    
-      
-  </body>
-
+  </div>
+  <div id="map" style="height: 500px;">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VkaPw_je3b_1T8F4ONEIYHGuX7a5Po&callback=initMap&v=weekly" defer></script>
+  </div>
   <footer>
     <div class="logo-footer"><h2>LOGO</h2></div>
     <div class="saiba-mais">
@@ -74,4 +55,5 @@
       </ul>
     </div>
   </footer>
+</body>
 </html>

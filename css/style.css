@@ -124,13 +124,18 @@ body{
                 align-items: center;
 
                 .foto-peixe{
-                    width: 120px;
-                    height: 110px;
-                    background-color: #666666;
+                    width: 200px; 
+                    height: 70px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
                 }
 
                 .texto-box{
