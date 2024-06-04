@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OceanWays</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/auth.js" defer></script>
 </head>
+
 <body>
   <div class="inicio-index">
     <div class="overlay">
@@ -14,7 +16,10 @@
         <nav>
           <ul class="links-header">
             <li><a href="./paginas/sobrenos.html">Integrantes</a></li>
-            <li><a href="./paginas/login.html ">Login</a></li>
+            <div class="div-login">
+              <li id="user-info" style="display: none; width: 86px;"><span id="user-name"></span></li>
+              <li class="link login-link"><a href="./paginas/login.html ">Login</a></li>
+            </div>
             <li><a href="#">Cadastro</a></li>
           </ul>
           <ul class="hamburguer">
