@@ -9,17 +9,32 @@
   </head>
 
   <body>
+
+    <div class="inicio-index">
+      <div class="overlay">
+        <header>
+          <div class="logo">Logo</div>
+          <nav>
+            <ul class="links-header">
+              <li><a href="./paginas/sobrenos.html">Integrantes</a></li>
+              <div class="div-login">
+                <li id="user-info" style="display: none; width: 86px;"><span id="user-name"></span></li>
+                <li class="link login-link"><a href="./paginas/login.html ">Login</a></li>
+              </div>
+              <li><a href="#">Cadastro</a></li>
+            </ul>
+            <ul class="hamburguer">
+              <li>
+                <a href="./paginas/menu.html"><img src="./img/icone-hamburguer.png" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
     <div class="container">
       <div class="inicio">
         <div class="overlay">
-          <header>
-            <div class="logo"><h1>LOGO</h1></div>
-            <ul class="links-header">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./sobrenos.html">Sobre</a></li>
-              <li><a href="#">Login</a></li>
-            </ul>
-          </header>
           <div class="box-card-inicio">
             <main>
                 <div id="div-login">
@@ -45,13 +60,12 @@
                         />
                       </div>
                       <div>
-                        <h3 for="idSenha">Senha:</h3>
+                        <label for="idSenha">Senha:</label>
                         <input
                           id="idSenha"
                           class="formatacao-entrada"
                           type="password"
                           name="senha"
-                          id="idSenha"
                           placeholder=" SENHA"
                         />
                         <i class="fa-regular fa-eye-slash"></i>
