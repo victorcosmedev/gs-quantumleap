@@ -9,23 +9,20 @@
   </head>
 
   <body>
-
     <div class="inicio-index">
       <div class="overlay">
         <header>
           <div class="logo">Logo</div>
           <nav>
             <ul class="links-header">
+              <li><a href="../index.html">Home</a></li>
               <li><a href="./paginas/sobrenos.html">Integrantes</a></li>
-              <div class="div-login">
-                <li id="user-info" style="display: none; width: 86px;"><span id="user-name"></span></li>
-                <li class="link login-link"><a href="./paginas/login.html ">Login</a></li>
-              </div>
-              <li><a href="#">Cadastro</a></li>
             </ul>
             <ul class="hamburguer">
               <li>
-                <a href="./paginas/menu.html"><img src="./img/icone-hamburguer.png" alt="" /></a>
+                <a href="./paginas/menu.html"
+                  ><img src="./img/icone-hamburguer.png" alt=""
+                /></a>
               </li>
             </ul>
           </nav>
@@ -37,46 +34,60 @@
         <div class="overlay">
           <div class="box-card-inicio">
             <main>
-                <div id="div-login">
-                  <div>
-                    <p class="valida"></p>
-                  </div>
-                  <div class="quadrado">
-                    <form
-                      action="#"
-                      method="get"
-                      onsubmit="return validaCampos(this.idEmail,this.idSenha)"
-                    >
-                      <h1>Acessar Conta</h1>
-                      <p>Preencha seus dados de acesso para continuar.</p>
-                      <div>
-                        <h2>Conta:</h2>
-                        <input
-                          id="idEmail"
-                          class="formatacao-entrada"
-                          type="email"
-                          name="senha"
-                          placeholder=" CPF / CNPJ"
-                        />
-                      </div>
-                      <div>
-                        <label for="idSenha">Senha:</label>
-                        <input
-                          id="idSenha"
-                          class="formatacao-entrada"
-                          type="password"
-                          name="senha"
-                          placeholder=" SENHA"
-                        />
-                        <i class="fa-regular fa-eye-slash"></i>
-                      </div>
-                      <div>
-                        <button type="submit" >Enviar</button>
-                      </div>
-                    </form>
-                  </div>
+              <div id="div-login">
+                <div>
+                  <p class="valida"></p>
                 </div>
-              </main>
+                <div class="quadrado">
+                  <form
+                    action="#"
+                    method="get"
+                    onsubmit="return validaCampos(this.idEmail,this.idSenha)"
+                  >
+                    <h1>Acessar Conta</h1>
+                    <p>Preencha seus dados de acesso para continuar.</p>
+                    <div>
+                      <h2>Email:</h2>
+                      <input
+                        id="idEmail"
+                        class="formatacao-entrada-login"
+                        type="email"
+                        name="senha"
+                        placeholder=" Digite seu email"
+                        required
+                        minlength="5"
+                      />
+                    </div>
+                    <div>
+                      <div class="formatacao-label">
+                        <label for="idSenha">Senha:</label>
+                      </div>
+
+                      <input
+                        id="idSenha"
+                        class="formatacao-entrada-login"
+                        type="password"
+                        name="senha"
+                        placeholder=" Digite sua senha"
+                        required
+                        minlength="5"
+                      />
+                      <i class="fa-regular fa-eye-slash"></i>
+                    </div>
+                    <div>
+                      <button type="submit">Enviar</button>
+                    </div>
+
+                    <div class="pergunta-cadastro">
+                      <p>
+                        Não possui cadastro?
+                        <a href="./cadastro.html">Clique aqui</a>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </main>
           </div>
         </div>
       </div>

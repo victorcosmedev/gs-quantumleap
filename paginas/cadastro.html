@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="inicio-index">
+      <div class="overlay">
+        <header>
+          <div class="logo">Logo</div>
+          <nav>
+            <ul class="links-header">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./paginas/sobrenos.html">Integrantes</a></li>
+            </ul>
+            <ul class="hamburguer">
+              <li>
+                <a href="./paginas/menu.html"
+                  ><img src="./img/icone-hamburguer.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div>
+          <form
+            action="#"
+            method="get"
+            onsubmit="return registraUsuario(idNome,idCpf,idGen,idEmail,idSenha,idConfirmaSenha)"
+          >
+            <div class="box-cadastro">
+              <div id="div-cadastro">
+                <h1>REGISTRO</h1>
+                <div>
+                  <legend>Dados Pessoais</legend>
+                  <div class="formatacao-label">
+                    <label for="idNome">Nome: </label>
+                    <input
+                      class="formatacao-entrada"
+                      type="text"
+                      name="txtNm"
+                      id="idNome"
+                      placeholder="Digite seu nome"
+                      required
+                      minlength="3"
+                    />
+                  </div>
+                  <div class="formatacao-label">
+                    <label for="idCpf">CPF:</label>
+                    <input
+                      class="formatacao-entrada"
+                      type="text"
+                      name="txtCpf"
+                      id="idCpf"
+                      placeholder="000.000.000-00"
+                      required
+                      minlength="14"
+                    />
+                  </div>
+                  <div class="formatacao-label">
+                    <label for="idGen">Gênero:</label>
+                    <select name="lstGen" id="idGen" class="formatacao-entrada">
+                      <option value="0">Selecione uma opção</option>
+                      <option value="m">Masculino</option>
+                      <option value="f">Feminino</option>
+                      <option value="o">Outros</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <legend>Dados de Acesso</legend>
+                  <div class="formatacao-label">
+                    <label for="idEmail">Email:</label>
+                    <input
+                      class="formatacao-entrada"
+                      type="email"
+                      name="txtEmail"
+                      id="idEmail"
+                      placeholder="Digite seu email"
+                      required
+                      minlength="6"
+                    />
+                  </div>
+                  <div class="formatacao-label">
+                    <label for="idSenha">Senha:</label>
+                    <input
+                      class="formatacao-entrada"
+                      type="password"
+                      name="txtSenha"
+                      id="idSenha"
+                      placeholder="Digite sua senha"
+                      required
+                      minlength="6"
+                    />
+                    <i class="fa-regular fa-eye-slash"></i>
+                  </div>
+                  <div class="formatacao-label">
+                    <label for="idConfirmaSenha">Confirme sua senha:</label>
+                    <input
+                      class="formatacao-entrada"
+                      type="password"
+                      name="txtConfirmaSenha"
+                      id="idConfirmaSenha"
+                      placeholder="Redigite sua senha"
+                      required
+                      minlength="6"
+                    />
+                    <i class="fa-regular fa-eye-slash"></i>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit">Registrar</button>
+                </div>
+                <div class="pergunta-login">
+                  <p>
+                    Já possui cadastro? <a href="./login.html">Clique aqui</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo-footer"><h2>LOGO</h2></div>
+      <div class="saiba-mais">
+        <h3>Saiba Mais</h3>
+        <ul>
+          <li><a href="#">Parceiro - 1</a></li>
+          <li><a href="#">Parceiro - 2</a></li>
+          <li><a href="#">Parceiro - 3</a></li>
+          <li><a href="#">Parceiro - 4</a></li>
+          <li><a href="#">Parceiro - 5</a></li>
+          <li><a href="#">Parceiro - 6</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

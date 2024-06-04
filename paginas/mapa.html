@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mapa</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
-  <script type="module" src="../js/api.js"></script>
-</head>
-<body>
-  <div class="inicio-index">
-    <div class="overlay">
-      <header>
-        <div class="logo">Logo</div>
-        <nav>
-          <ul class="links-header">
-            <li><a href="#">Integrantes</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
-          </ul>
-          <ul class="hamburguer">
-            <li>
-              <a href="./paginas/menu.html"><img src="../img/icone-hamburguer.png" alt="" /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="conteudo-inicio">
-        <div class="card-conteudo-inicio">
-          <div class="texto-card">
-            <h1>Título</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dignissimos corrupti quaerat suscipit voluptates quibusdam reprehenderit ut ad temporibus facilis perspiciatis, ex exercitationem voluptatem dolorum, cupiditate nobis, illo delectus adipisci! Accusamus in quod corporis suscipit dolores explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam provident accusantium, debitis sequi id iure cum praesentium beatae ex, numquam assumenda perferendis consectetur? Beatae.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="module" src="../js/api.js"></script>
+    <script src="../js/auth.js" defer></script>
+  </head>
+  <body>
+    <div class="inicio-index">
+      <div class="overlay">
+        <header>
+          <div class="logo">Logo</div>
+          <nav>
+            <ul class="links-header">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./sobrenos.html">Integrantes</a></li>
+              <div class="div-login">
+                <li id="user-info" style="display: none; width: 86px">
+                  <span id="user-name"></span>
+                </li>
+                <li class="link login-link">
+                  <a href="./login.html">Login</a>
+                </li>
+              </div>
+            </ul>
+            <ul class="hamburguer">
+              <li>
+                <a href="./paginas/menu.html"
+                  ><img src="./img/icone-hamburguer.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="conteudo-inicio">
+          <div class="card-conteudo-inicio">
+            <div class="texto-card">
+              <h1>Título</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nostrum dignissimos corrupti quaerat suscipit voluptates
+                quibusdam reprehenderit ut ad temporibus facilis perspiciatis,
+                ex exercitationem voluptatem dolorum, cupiditate nobis, illo
+                delectus adipisci! Accusamus in quod corporis suscipit dolores
+                explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam
+                provident accusantium, debitis sequi id iure cum praesentium
+                beatae ex, numquam assumenda perferendis consectetur? Beatae.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="map" style="height: 500px;">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VkaPw_je3b_1T8F4ONEIYHGuX7a5Po&callback=initMap&v=weekly" defer></script>
-  </div>
-  <footer>
-    <div class="logo-footer"><h2>LOGO</h2></div>
-    <div class="saiba-mais">
-      <h3>Saiba Mais</h3>
-      <ul>
-        <li><a href="#">Parceiro - 1</a></li>
-        <li><a href="#">Parceiro - 2</a></li>
-        <li><a href="#">Parceiro - 3</a></li>
-        <li><a href="#">Parceiro - 4</a></li>
-        <li><a href="#">Parceiro - 5</a></li>
-        <li><a href="#">Parceiro - 6</a></li>
-      </ul>
+    <div id="map" style="height: 500px">
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0VkaPw_je3b_1T8F4ONEIYHGuX7a5Po&callback=initMap&v=weekly"
+        defer
+      ></script>
     </div>
-  </footer>
-</body>
+    <footer>
+      <div class="logo-footer"><h2>LOGO</h2></div>
+      <div class="saiba-mais">
+        <h3>Saiba Mais</h3>
+        <ul>
+          <li><a href="#">Parceiro - 1</a></li>
+          <li><a href="#">Parceiro - 2</a></li>
+          <li><a href="#">Parceiro - 3</a></li>
+          <li><a href="#">Parceiro - 4</a></li>
+          <li><a href="#">Parceiro - 5</a></li>
+          <li><a href="#">Parceiro - 6</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

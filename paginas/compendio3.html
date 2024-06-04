@@ -1,114 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OceanWays</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-<body>
-  <div class="inicio-index">
-    <div class="overlay">
-      <header>
-        <div class="logo">Logo</div>
-        <nav>
-          <ul class="links-header">
-            <li><a href="../paginas/sobrenos.html">Integrantes</a></li>
-            <li><a href="../paginas/login.html ">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
-          </ul>
-          <ul class="hamburguer">
-            <li>
-              <a href="../paginas/menu.html"><img src="../img/icone-hamburguer.png" alt="" /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="conteudo-inicio">
-        <div class="card-conteudo-inicio">
-          <div class="texto-card">
-            <h1>Título</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dignissimos corrupti quaerat suscipit voluptates quibusdam reprehenderit ut ad temporibus facilis perspiciatis, ex exercitationem voluptatem dolorum, cupiditate nobis, illo delectus adipisci! Accusamus in quod corporis suscipit dolores explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam provident accusantium, debitis sequi id iure cum praesentium beatae ex, numquam assumenda perferendis consectetur? Beatae.
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OceanWays</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/auth.js" defer></script>
+  </head>
+  <body>
+    <div class="inicio-index">
+      <div class="overlay">
+        <header>
+          <div class="logo">Logo</div>
+          <nav>
+            <ul class="links-header">
+              <li><a href="./paginas/sobrenos.html">Integrantes</a></li>
+              <div class="div-login">
+                <li id="user-info" style="display: none; width: 86px">
+                  <span id="user-name"></span>
+                </li>
+                <li class="link login-link">
+                  <a href="./paginas/login.html ">Login</a>
+                </li>
+              </div>
+            </ul>
+            <ul class="hamburguer">
+              <li>
+                <a href="./paginas/menu.html"
+                  ><img src="./img/icone-hamburguer.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="conteudo-inicio">
+          <div class="card-conteudo-inicio">
+            <div class="texto-card">
+              <h1>Título</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nostrum dignissimos corrupti quaerat suscipit voluptates
+                quibusdam reprehenderit ut ad temporibus facilis perspiciatis,
+                ex exercitationem voluptatem dolorum, cupiditate nobis, illo
+                delectus adipisci! Accusamus in quod corporis suscipit dolores
+                explicabo harum cupiditate omnis soluta illo? Dolorem rerum nam
+                provident accusantium, debitis sequi id iure cum praesentium
+                beatae ex, numquam assumenda perferendis consectetur? Beatae.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <main class="conteudo-index">
-    <h1>Compêndio de peixes</h1>
-    <div class="box-peixe">
-      <div class="conteudo-box">
-        <div class="foto-peixe" style="background-image: url(../img/Atum-foto.jpg); "></div>
-        <div class="texto-box">
-          <h1>Atum</h1>
-          <p><span>Habitat: </span>Oceano Atlântico Sul</p>
-          <p><span>Época de reprodução: </span>1º de Novembro a 21º de Fevereiro</p>
+    <main class="conteudo-index">
+      <h1>Compêndio de peixes</h1>
+      <div class="box-peixe">
+        <div class="conteudo-box">
+          <div
+            class="foto-peixe"
+            style="background-image: url(../img/Atum-foto.jpg)"
+          ></div>
+          <div class="texto-box">
+            <h1>Atum</h1>
+            <p><span>Habitat: </span>Oceano Atlântico Sul</p>
+            <p>
+              <span>Época de reprodução: </span>1º de Novembro a 21º de
+              Fevereiro
+            </p>
+          </div>
         </div>
+        <a href="../paginas/mapa.html?location=Atum" class="localizacao">
+          <img src="../img/icone-localizacao.png" alt="" />
+        </a>
       </div>
-      <a href="../paginas/mapa.html?location=Atum" class="localizacao">
-        <img src="../img/icone-localizacao.png" alt="" />
-      </a>
-    </div>
-    <div class="box-peixe">
-      <div class="conteudo-box">
-        <div class="foto-peixe" style="background-image: url(../img/Marlin-foto.jpg);"></div>
-        <div class="texto-box">
-          <h1>Marlin</h1>
-          <p><span>Habitat: </span>Oceano Atlântico Sul, especialmente próximo à costa sul da Bahia.</p>
-          <p><span>Época de reprodução: </span>1º de Novembro a 21º de Fevereiro</p>
+      <div class="box-peixe">
+        <div class="conteudo-box">
+          <div
+            class="foto-peixe"
+            style="background-image: url(../img/Marlin-foto.jpg)"
+          ></div>
+          <div class="texto-box">
+            <h1>Marlin</h1>
+            <p>
+              <span>Habitat: </span>Oceano Atlântico Sul, especialmente próximo
+              à costa sul da Bahia.
+            </p>
+            <p>
+              <span>Época de reprodução: </span>1º de Novembro a 21º de
+              Fevereiro
+            </p>
+          </div>
         </div>
+        <a href="../paginas/mapa.html?location=Marlin" class="localizacao">
+          <img src="../img/icone-localizacao.png" alt="" />
+        </a>
       </div>
-      <a href="../paginas/mapa.html?location=Marlin" class="localizacao" >
-        <img src="../img/icone-localizacao.png" alt="" />
-      </a>
-    </div>
-    <div class="box-peixe">
-      <div class="conteudo-box">
-        <div class="foto-peixe" style="background-image: url(../img/Douradodomar-foto.jpg);"></div>
-        <div class="texto-box">
-          <h1>Dourado-do-mar</h1>
-          <p><span>Habitat: </span>Oceano Atlântico Sul, próximo à Florianópolis, SC</p>
-          <p><span>Época de reprodução: </span>1º de Setembro a 31º de Maio</p>
+      <div class="box-peixe">
+        <div class="conteudo-box">
+          <div
+            class="foto-peixe"
+            style="background-image: url(../img/Douradodomar-foto.jpg)"
+          ></div>
+          <div class="texto-box">
+            <h1>Dourado-do-mar</h1>
+            <p>
+              <span>Habitat: </span>Oceano Atlântico Sul, próximo à
+              Florianópolis, SC
+            </p>
+            <p>
+              <span>Época de reprodução: </span>1º de Setembro a 31º de Maio
+            </p>
+          </div>
         </div>
+        <a
+          href="../paginas/mapa.html?location=Douradodomar "
+          class="localizacao"
+          id="loc3"
+        >
+          <img src="../img/icone-localizacao.png" alt="" />
+        </a>
       </div>
-      <a href="../paginas/mapa.html?location=Douradodomar " class="localizacao" id="loc3">
-        <img src="../img/icone-localizacao.png" alt="" />
-      </a>
-    </div>
-    <div class="box-peixe">
-      <div class="conteudo-box">
-        <div class="foto-peixe" style="background-image: url(../img/Peixe-espada-foto.jpg);"></div>
-        <div class="texto-box">
-          <h1>Peixe-espada</h1>
-          <p><span>Habitat: </span>Oceano Atlântico Sul, mais localizado no Sul e Sudeste</p>
-          <p><span>Época de reprodução: </span>1º de Maio a 31º Agosto</p>
+      <div class="box-peixe">
+        <div class="conteudo-box">
+          <div
+            class="foto-peixe"
+            style="background-image: url(../img/Peixe-espada-foto.jpg)"
+          ></div>
+          <div class="texto-box">
+            <h1>Peixe-espada</h1>
+            <p>
+              <span>Habitat: </span>Oceano Atlântico Sul, mais localizado no Sul
+              e Sudeste
+            </p>
+            <p><span>Época de reprodução: </span>1º de Maio a 31º Agosto</p>
+          </div>
         </div>
+        <a
+          href="../paginas/mapa.html?location=Peixeespada"
+          class="localizacao"
+          id="loc4"
+        >
+          <img src="../img/icone-localizacao.png" alt="" />
+        </a>
       </div>
-      <a href="../paginas/mapa.html?location=Peixeespada" class="localizacao" id="loc4">
-        <img src="../img/icone-localizacao.png" alt="" />
-      </a>
-    </div>
-    <div class="seleciona-pagina">
+      <div class="seleciona-pagina">
         <a href="../index.html"> <div class="botao-pagina">1</div> </a>
         <a href="./compendio2.html"> <div class="botao-pagina">2</div> </a>
         <a href="./compendio3.html"> <div class="botao-pagina">3</div> </a>
       </div>
-  </main>
-  <footer>
-    <div class="logo-footer"><h2>LOGO</h2></div>
-    <div class="saiba-mais">
-      <h3>Saiba Mais</h3>
-      <ul>
-        <li><a href="#">Parceiro - 1</a></li>
-        <li><a href="#">Parceiro - 2</a></li>
-        <li><a href="#">Parceiro - 3</a></li>
-        <li><a href="#">Parceiro - 4</a></li>
-        <li><a href="#">Parceiro - 5</a></li>
-        <li><a href="#">Parceiro - 6</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+    </main>
+    <footer>
+      <div class="logo-footer"><h2>LOGO</h2></div>
+      <div class="saiba-mais">
+        <h3>Saiba Mais</h3>
+        <ul>
+          <li><a href="#">Parceiro - 1</a></li>
+          <li><a href="#">Parceiro - 2</a></li>
+          <li><a href="#">Parceiro - 3</a></li>
+          <li><a href="#">Parceiro - 4</a></li>
+          <li><a href="#">Parceiro - 5</a></li>
+          <li><a href="#">Parceiro - 6</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
