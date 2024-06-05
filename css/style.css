@@ -389,8 +389,8 @@ body {
   }
   .formatacao-label {
     display: flex;
-    justify-content: center;
-    margin-top: 1vw;
+    flex-direction: column;
+    align-items: center;
   }
   .formatacao-entrada {
     margin-left: 0.5vw;
@@ -401,7 +401,7 @@ body {
     border: solid black 0.5px;
   }
   .formatacao-entrada-login {
-    margin-left: 13vw;
+    align-items: center;
     margin-top: 10px;
     height: 2vw;
     width: 15vw;
@@ -409,22 +409,30 @@ body {
     font-size: 1.5rem;
     border: solid black 0.5px;
   }
-
-  /* Página Cadastro */
-  .box-cadastro {
-    display: flex;
-    justify-content: center;
-  }
-  #div-cadastro {
+  .centralizar-input {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 600px;
+    align-items: center;
+  }
+  /* Página Cadastro */
+
+  .box-cadastro {
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  #div-cadastro {
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     background-color: #c9e2ee;
     border: solid black 3px;
     border-radius: 20px;
-    margin: 30px;
-
+    margin-bottom: 300px;
     legend {
       display: flex;
       justify-content: center;
@@ -435,19 +443,21 @@ body {
 
     h1 {
       text-align: center;
-      margin-top: 3vw;
+      margin-top: 1vw;
     }
-
+    .div-botao {
+      display: flex;
+      justify-content: center;
+    }
     button {
-      display: block;
+      align-items: center;
       padding: 5px 25px;
       border-radius: 5px;
       border: solid 1px;
       background-color: #000000;
       color: #fff;
       font-size: 1.75rem;
-      margin-left: 200px;
-      margin-top: 30px;
+      margin-top: 0.5vw;
     }
     .fa-regular {
       cursor: pointer;
@@ -456,7 +466,6 @@ body {
     .pergunta-login {
       display: flex;
       justify-content: center;
-      margin-top: 1.5vw;
     }
     div a {
       text-decoration: none;
