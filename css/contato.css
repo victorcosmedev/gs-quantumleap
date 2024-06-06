@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-size: 1.6rem;
+}
+
+
+
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 18px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 8px 12px;
+    }
+}

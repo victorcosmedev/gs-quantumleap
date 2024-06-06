@@ -1,33 +1,35 @@
-// auth.js
-
 // Função para verificar se o usuário está logado
 function verificarUsuarioLogado() {
     // Verifica se há um usuário logado no localStorage
     const usuarioLogado = JSON.parse(localStorage.getItem("usuario-logado"));
+    const userInfoElement = document.getElementById("user-info");
+    const loginLink = document.querySelector(".login-link a");
+
     if (usuarioLogado) {
         // Exibe uma mensagem junto com o nome do usuário
         const mensagem = "Olá, ";
         const userNameElement = document.getElementById("user-name");
         userNameElement.textContent = mensagem + usuarioLogado.nomeUsuario;
-        
-        const userInfoElement = document.getElementById("user-info");
         userInfoElement.style.display = "block";
 
         // Altera o link de login para logout
-        const loginLink = document.getElementById("login-link");
-        loginLink.outerHTML = "<a href='#' onclick='deslogarUsuario()'>Logout</a>";
+        loginLink.textContent = "Logout";
+        loginLink.href = "#";
+        loginLink.onclick = deslogarUsuario;
     } else {
-        const userInfoElement = document.getElementById("user-info");
+        // Esconde as informações do usuário
         userInfoElement.style.display = "none";
 
         // Restaura o link de login
-        const loginLink = document.getElementById("login-link");
-        loginLink.outerHTML = '<a href="./login.html" id="login-link">Login</a>';
+        loginLink.textContent = "Login";
+        loginLink.href = "/gs-quantumleap/paginas/login.html";
+        loginLink.onclick = null;
     }
 }
 
 // Função para deslogar o usuário
-function deslogarUsuario() {
+function deslogarUsuario(event) {
+    event.preventDefault();
     // Remove o usuário do localStorage e sessionStorage
     localStorage.removeItem("usuario-logado");
     sessionStorage.removeItem("token");

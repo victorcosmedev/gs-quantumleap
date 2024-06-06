@@ -22,12 +22,13 @@ body {
 
 @media screen and (min-width: 1200px) {
   /* Formatação do início da index */
-  header div img{
+  header div img {
     width: 100px;
   }
-  footer div img{
-    width: 200px
+  footer div img {
+    width: 200px;
   }
+
   .inicio-index {
     background-image: url("../img/bg-inicio.jpg");
     background-size: cover;
@@ -54,16 +55,15 @@ body {
 
         nav {
           padding-right: 2.5%;
-          div{
+          div {
             display: flex;
           }
 
           ul.links-header {
             list-style-type: none;
-            
+
             gap: 5%;
             font-weight: bold;
-            
 
             li a {
               padding: 0.5rem 1.5rem;
@@ -76,7 +76,7 @@ body {
               color: #fff;
             }
           }
-          ul{
+          ul {
             list-style-type: none;
           }
           ul.hamburguer {
@@ -114,12 +114,12 @@ body {
               line-height: 20pt;
             }
 
-            h3{
+            h3 {
               margin-top: 1%;
               margin-bottom: 1%;
               font-size: 1.5vw;
             }
-            hr{
+            hr {
               margin-top: 1vw;
               margin-bottom: 1vw;
             }
@@ -159,7 +159,6 @@ body {
           background-size: cover; /* Adicione esta linha */
           background-position: center;
         }
-        
 
         .texto-box {
           margin-left: 6.5%;
@@ -214,8 +213,14 @@ body {
       ul {
         list-style: none;
         font-size: 1.25rem;
+        text-decoration: none;
+        color: white;
         li {
           margin-bottom: 5%;
+        }
+        li a {
+          text-decoration: none;
+          color: white;
         }
         li a:visited {
           color: rgb(52, 76, 255);
@@ -229,7 +234,6 @@ body {
       background-image: url("../img/bg-inicio.jpg");
       background-size: cover;
       height: 1000px;
-    
 
       .overlay {
         background-color: rgb(0, 0, 0, 0.6);
@@ -300,7 +304,7 @@ body {
       }
     }
   }
-
+  
   /* Página Sobre Nós */
   main.sobre-nos {
     padding: 50px 150px 75px 150px;
@@ -339,9 +343,19 @@ body {
       h4 {
         color: #8f8f8f;
       }
+      ul {
+        color: #8f8f8f;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+      }
     }
   }
- 
+
   /* Página Login */
   #div-login {
     display: flex;
@@ -454,7 +468,7 @@ body {
     background-color: #c9e2ee;
     border: solid black 3px;
     border-radius: 20px;
-   
+
     legend {
       display: flex;
       justify-content: center;
@@ -494,15 +508,57 @@ body {
       text-align: center;
     }
   }
+  /* Contato */
+  .contact-form {
+    background-color: #c9e2ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+  }
+
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   /* Formatação do início da index */
-  header div img{
+  header div img {
     width: 100px;
   }
-  footer div img{
-    width: 200px
+  footer div img {
+    width: 200px;
   }
   .inicio-index {
     background-image: url("../img/bg-inicio.jpg");
@@ -530,16 +586,15 @@ body {
 
         nav {
           padding-right: 2.5%;
-          div{
+          div {
             display: flex;
           }
 
           ul.links-header {
             list-style-type: none;
-            
+
             gap: 5%;
             font-weight: bold;
-            
 
             li a {
               padding: 0.5rem 1.5rem;
@@ -552,7 +607,7 @@ body {
               color: #fff;
             }
           }
-          ul{
+          ul {
             list-style-type: none;
           }
           ul.hamburguer {
@@ -590,12 +645,11 @@ body {
               line-height: 20pt;
             }
 
-            h3{
+            h3 {
               margin-top: 1%;
               margin-bottom: 1%;
-              
             }
-            hr{
+            hr {
               margin-top: 1vw;
               margin-bottom: 1vw;
             }
@@ -695,6 +749,10 @@ body {
         li {
           margin-bottom: 5%;
         }
+        li a {
+          text-decoration: none;
+          color: white;
+        }
         li a:visited {
           color: rgb(52, 76, 255);
         }
@@ -707,7 +765,6 @@ body {
       background-image: url("../img/bg-inicio.jpg");
       background-size: cover;
       height: 1000px;
-  
 
       .overlay {
         background-color: rgb(0, 0, 0, 0.6);
@@ -778,7 +835,48 @@ body {
       }
     }
   }
+  /* Contato */
+  .contact-form {
+    background-color: #c9e2ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+  }
 
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
   /* Página Sobre Nós */
   main.sobre-nos {
     padding: 50px 150px 75px 100px;
@@ -817,9 +915,19 @@ body {
       h4 {
         color: #8f8f8f;
       }
+      ul {
+        color: #8f8f8f;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+      }
     }
   }
- 
+
   /* Página Login */
   #div-login {
     display: flex;
@@ -895,7 +1003,7 @@ body {
   }
   .formatacao-entrada {
     margin-left: 0.5vw;
-    
+
     border-radius: 10px;
     font-size: 1.5rem;
     border: solid black 0.5px;
@@ -933,7 +1041,7 @@ body {
     legend {
       display: flex;
       justify-content: center;
-      
+
       font-weight: bolder;
       margin-top: 1vw;
     }
@@ -972,11 +1080,53 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  header div img{
+  header div img {
     width: 100px;
   }
-  footer div img{
-    width: 200px
+  footer div img {
+    width: 200px;
+  }
+  /* Contato */
+  .contact-form {
+    background-color: #c9e2ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+  }
+
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
   }
   .inicio-index {
     background-image: url("../img/bg-inicio.jpg");
@@ -1004,16 +1154,15 @@ body {
 
         nav {
           padding-right: 2.5%;
-          div{
+          div {
             display: flex;
           }
 
           ul.links-header {
             list-style-type: none;
-            
+
             gap: 5%;
             font-weight: bold;
-            
 
             li a {
               padding: 0.5rem 1.5rem;
@@ -1026,7 +1175,7 @@ body {
               color: #fff;
             }
           }
-          ul{
+          ul {
             list-style-type: none;
           }
           ul.hamburguer {
@@ -1064,12 +1213,11 @@ body {
               line-height: 20pt;
             }
 
-            h3{
+            h3 {
               margin-top: 1%;
               margin-bottom: 1%;
-              
             }
-            hr{
+            hr {
               margin-top: 1vw;
               margin-bottom: 1vw;
             }
@@ -1106,10 +1254,9 @@ body {
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-size: cover; 
+          background-size: cover;
           background-position: center;
         }
-        
 
         .texto-box {
           margin-left: 6.5%;
@@ -1167,6 +1314,10 @@ body {
         li {
           margin-bottom: 5%;
         }
+        li a {
+          text-decoration: none;
+          color: white;
+        }
         li a:visited {
           color: rgb(52, 76, 255);
         }
@@ -1179,7 +1330,6 @@ body {
       background-image: url("../img/bg-inicio.jpg");
       background-size: cover;
       height: 1000px;
-
 
       .overlay {
         background-color: rgb(0, 0, 0, 0.6);
@@ -1289,9 +1439,19 @@ body {
       h4 {
         color: #8f8f8f;
       }
+      ul {
+        color: #8f8f8f;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+      }
     }
   }
- 
+
   /* Página Login */
   #div-login {
     display: flex;
@@ -1469,11 +1629,11 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-  header div img{
+  header div img {
     width: 100px;
   }
-  footer div img{
-    width: 200px
+  footer div img {
+    width: 200px;
   }
   .inicio-index {
     background-image: url("../img/bg-inicio.jpg");
@@ -1497,8 +1657,6 @@ body {
         color: #fff;
         nav {
           padding-right: 2.5%;
-
-          
 
           ul.links-header {
             list-style-type: none;
@@ -1592,7 +1750,7 @@ body {
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background-size: cover; 
+          background-size: cover;
           background-position: center;
         }
 
@@ -1683,7 +1841,7 @@ body {
       width: 500px;
       height: 600px;
     }
-    .form-login{
+    .form-login {
       display: flex;
       justify-content: center;
       margin-top: 2%;
@@ -1724,7 +1882,6 @@ body {
       background-color: #000000;
       color: #fff;
       font-size: 1.75rem;
-      
     }
     .fa-regular {
       cursor: pointer;
@@ -1763,9 +1920,51 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  /* Contato */
+  .contact-form {
+    background-color: #c9e2ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+  }
 
-   /* Página Sobre Nós */
-   main.sobre-nos {
+  .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Página Sobre Nós */
+  main.sobre-nos {
     padding: 15px 0 0 20px;
     display: flex;
     flex-direction: column;
@@ -1802,12 +2001,21 @@ body {
       h4 {
         color: #8f8f8f;
       }
+      ul {
+        color: #8f8f8f;
+        text-decoration: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      ul li a {
+        text-decoration: none;
+      }
     }
   }
-   /* Página Cadastro */
+  /* Página Cadastro */
 
-   
-   .box-cadastro {
+  .box-cadastro {
     display: flex;
     align-items: center;
     max-width: 40%;
@@ -1880,6 +2088,10 @@ body {
         font-size: 1.25rem;
         li {
           margin-bottom: 5%;
+        }
+        li a {
+          text-decoration: none;
+          color: white;
         }
         li a:visited {
           color: rgb(52, 76, 255);
